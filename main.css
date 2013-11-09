@@ -1,0 +1,51 @@
+/* ==========================================================================
+   ESTRUTURA
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-size: 10px;
+
+  -webkit-transition:background-color .5s ease-in-out; ;
+  -moz-transition:background-color .5s ease-in-out; ;
+  -ms-transition:background-color .5s ease-in-out; ;
+  -o-transition:background-color .5s ease-in-out; ;
+  transition:background-color .5s ease-in-out; ;
+}
+
+#unibratec{
+  font-size: 22em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+
+/* ==========================================================================
+   EFEITOS
+   ========================================================================== */
+.nome-branco{
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(255,255,255, 1);
+}
+
+@keyframes pisca{
+  to{
+    background: red;
+  }
+  from{
+    background: blue;
+  }
+}
+
+.bg-preto {
+  background-color: black;
+
+  -webkit-animation: pisca .5s linear infinite alternate;
+  -moz-animation: pisca .5s linear infinite alternate;
+  -o-animation: pisca .5s linear infinite alternate;
+  animation: pisca .5s linear infinite alternate;
+}
